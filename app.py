@@ -8,7 +8,7 @@ import datetime
 from pathlib import Path
 
 # Import the inference components
-from inference import InferenceAgent, InferenceOptions
+from generate import InferenceAgent, InferenceOptions
 
 
 class GradioInterface:
