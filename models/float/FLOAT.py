@@ -1,3 +1,4 @@
+import os
 import torch, math
 import torch.nn as nn
 import torch.nn.functional as F
@@ -233,7 +234,11 @@ class AudioEncoder(BaseModel):
 class Audio2Emotion(nn.Module):
     def __init__(self, opt):
         super().__init__()
-        self.wav2vec2_for_emotion = Wav2Vec2ForSpeechClassification.from_pretrained(opt.audio2emotion_path, local_files_only=True)
+		if os.path.exists(opt.audio2emotion_path):
+        	self.wav2vec2_for_emotion = Wav2Vec2ForSpeechClassification.from_pretrained(opt.audio2emotion_path, local_files_only=True)
+		else:
+			self.wav2vec2_for_emotion = Wav2Vec2ForSpeechClassification.from_pretrained(opt.audio2emotion_path)
+
         self.wav2vec2_for_emotion.eval()
         
 		# seven labels
