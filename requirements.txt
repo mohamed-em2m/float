@@ -33,6 +33,7 @@ matplotlib==3.7.2
 flow-vis==0.1
 pyyaml==6.0.1
 tqdm==4.65.0
+gdown==5.2.0
 
 # Web Interface - Gradio
 gradio==3.50.2
