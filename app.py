@@ -370,7 +370,7 @@ def parse_launch_args():
     
     # Model options
     parser.add_argument('--ckpt_path', type=str, 
-                        default="/home/nvadmin/workspace/taek/float-pytorch/checkpoints/float.pth",
+                        default="./checkpoints/float.pth",
                         help='Path to model checkpoint')
     parser.add_argument('--res_dir', type=str, default="./results",
                         help='Directory to save generated videos')
