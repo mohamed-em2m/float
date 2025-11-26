@@ -53,3 +53,4 @@ httpx==0.25.1
 # Pydantic for data validation
 pydantic==2.7.0
 pydantic-settings==2.1.0
+matplotlib_inline==0.1.7
