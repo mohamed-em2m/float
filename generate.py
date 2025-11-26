@@ -180,7 +180,7 @@ class InferenceOptions(BaseOptions):
 		parser.add_argument('--res_dir',
 				default="./results", type=str, help='result dir')
 		parser.add_argument('--wav2vec_model_path',
-				default="./checkpoints/facebook--wav2vec2-base-960h", type=str, help='wav2vec_model_path)
+				default="./checkpoints/facebook--wav2vec2-base-960h", type=str, help='wav2vec_model_path')
 		return parser
 
 
